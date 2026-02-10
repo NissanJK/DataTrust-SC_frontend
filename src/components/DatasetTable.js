@@ -35,7 +35,7 @@ export default function DatasetTable() {
             const blob = new Blob([res.data], { type: "text/csv" });
             const a = document.createElement("a");
             a.href = URL.createObjectURL(blob);
-            a.download = `privysharing_dataset_${Date.now()}.csv`;
+            a.download = `DataTrust-SC_dataset_${Date.now()}.csv`;
             a.click();
             URL.revokeObjectURL(a.href);
         } catch (err) {
