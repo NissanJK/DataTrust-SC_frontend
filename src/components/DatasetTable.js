@@ -93,7 +93,7 @@ export default function DatasetTable() {
                                 <tr key={d._id || i} className="table-row">
                                     <td>{i + 1}</td>
                                     <td>{formatDate(d.createdAt)}</td>
-                                    <td>{displayValue(d.metadata?.ownerRole)}</td>
+                                    <td>{displayValue(d.metadata?.ownerRole||d.metadata?.Data_Owner)}</td>
                                     <td>
                                         <span className="sector-badge">
                                             {displayValue(d.metadata?.Sector)}
